@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Library</class>
+ <widget class="QMainWindow" name="Library">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>830</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Livros</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QToolBox" name="toolBox">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="currentIndex">
+           <number>3</number>
+          </property>
+          <widget class="QWidget" name="page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>790</width>
+             <height>294</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Empréstimo de livro</string>
+           </attribute>
+           <widget class="QWidget" name="formLayoutWidget_5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>761</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_5">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>ISBN:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>CPF:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="empISBN"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="empUser"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="btnEmp">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>160</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Emprestar livro</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="txtEmp">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>100</y>
+              <width>351</width>
+              <height>191</height>
+             </rect>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnEmpDisp">
+            <property name="geometry">
+             <rect>
+              <x>410</x>
+              <y>110</y>
+              <width>191</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Verificar disponibilidade</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="statusEmp">
+            <property name="geometry">
+             <rect>
+              <x>410</x>
+              <y>220</y>
+              <width>281</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="noEmp">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>240</y>
+              <width>301</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnLimparEmp">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>210</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>790</width>
+             <height>294</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Devolução de livro</string>
+           </attribute>
+           <widget class="QWidget" name="formLayoutWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>751</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_6">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>ISBN:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>CPF:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="isbnDev"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="cpfDev"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="btnDev">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>120</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Devolver livro</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="devLivro">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>200</y>
+              <width>251</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnCleanDev">
+            <property name="geometry">
+             <rect>
+              <x>460</x>
+              <y>120</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnLimpar">
+            <property name="geometry">
+             <rect>
+              <x>610</x>
+              <y>340</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/new/prefix1/ui.png);</string>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="acesso">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>380</y>
+              <width>351</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/new/prefix1/ui.png);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnEntrar">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>340</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/new/prefix1/ui.png);</string>
+            </property>
+            <property name="text">
+             <string>Entrar</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>790</width>
+             <height>294</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Cadastrar livro</string>
+           </attribute>
+           <widget class="QWidget" name="formLayoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>761</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Título:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="titulo"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Autor:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="autor"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>ISBN:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="isbn"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>140</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Cadastrar</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="limparLivro">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>140</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="statusLivro">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>190</y>
+              <width>441</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>790</width>
+             <height>294</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Excluir livro</string>
+           </attribute>
+           <widget class="QWidget" name="formLayoutWidget_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>761</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_4">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Título:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="excludTit"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>ISBN:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="txtExcludISBN"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QTextEdit" name="txtExclud">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>100</y>
+              <width>761</width>
+              <height>151</height>
+             </rect>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnSearch">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>70</y>
+              <width>140</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Procurar</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnLimparExclud">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>70</y>
+              <width>130</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnExclud">
+            <property name="geometry">
+             <rect>
+              <x>310</x>
+              <y>260</y>
+              <width>140</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Excluir livro</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="livroExcludOk">
+            <property name="geometry">
+             <rect>
+              <x>560</x>
+              <y>260</y>
+              <width>211</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Funcionários</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QToolBox" name="toolBox_2">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="page_20">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Exibir funcionários cadastrados</string>
+           </attribute>
+           <widget class="QPushButton" name="mostrarFunc">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>251</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Mostrar funcionários cadastrados</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="funcCadastrados">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>40</y>
+              <width>751</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>790</width>
+             <height>356</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Cadastrar funcionário</string>
+           </attribute>
+           <widget class="QPushButton" name="cadasFunc">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>90</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Cadastrar</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="limpFunc">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>90</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>43</y>
+              <width>30</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>CPF:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="cpfFunc">
+            <property name="geometry">
+             <rect>
+              <x>61</x>
+              <y>43</y>
+              <width>721</width>
+              <height>27</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>45</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Nome:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="nomeFunc">
+            <property name="geometry">
+             <rect>
+              <x>61</x>
+              <y>10</y>
+              <width>721</width>
+              <height>27</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="funcResultado">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>140</y>
+              <width>401</width>
+              <height>17</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>cadasFunc</zorder>
+           <zorder>label_2</zorder>
+           <zorder>cpfFunc</zorder>
+           <zorder>label</zorder>
+           <zorder>nomeFunc</zorder>
+           <zorder>funcResultado</zorder>
+           <zorder>limpFunc</zorder>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Usuários</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QToolBox" name="toolBox_3">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>790</width>
+             <height>325</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Cadastrar usuário</string>
+           </attribute>
+           <widget class="QWidget" name="formLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>771</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_2">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Nome:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>CPF:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="txtNomeUser"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="txtCPFUser"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="btnCadasUser">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>100</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Cadastrar</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnLimparUser">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>100</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="cadasUser">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>170</y>
+              <width>411</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Remover usuário</string>
+           </attribute>
+           <widget class="QWidget" name="formLayoutWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>771</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Nome:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>CPF:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="txtExcludUser"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="txtExcludUserCPF"/>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="btnSearchUser">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>100</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Procurar</string>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="txtExcludUser_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>150</y>
+              <width>761</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnExcludUser">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>290</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Excluir Usuário</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnCleanUser">
+            <property name="geometry">
+             <rect>
+              <x>470</x>
+              <y>100</y>
+              <width>140</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Limpar</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="userExcludOk">
+            <property name="geometry">
+             <rect>
+              <x>560</x>
+              <y>290</y>
+              <width>211</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Exibir usuários cadastrados</string>
+           </attribute>
+           <widget class="QTextEdit" name="txtShowUsers">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>40</y>
+              <width>751</width>
+              <height>271</height>
+             </rect>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnShowUser">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>0</y>
+              <width>241</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Mostrar usuários cadastrados</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Biblioteca</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QToolBox" name="toolBox_4">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_10">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>790</width>
+             <height>387</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Quantidade de livros da biblioteca</string>
+           </attribute>
+           <widget class="QTextEdit" name="txtAcervo">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>771</width>
+              <height>311</height>
+             </rect>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnAcervo">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>211</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Exibir acervo da biblioteca</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="txtNumber">
+            <property name="geometry">
+             <rect>
+              <x>530</x>
+              <y>0</y>
+              <width>161</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QTextEdit" name="livrosNumber">
+            <property name="geometry">
+             <rect>
+              <x>700</x>
+              <y>0</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>830</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

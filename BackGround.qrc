@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>library.png</file>
+        <file>ui.png</file>
+    </qresource>
+</RCC>
