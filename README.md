@@ -1,2 +1,3 @@
-## Course conclusion project for Object-oriented Programming in C++ Edit
+## JCLibrary
+Course conclusion project for Object-oriented Programming in C++ Edit
 
